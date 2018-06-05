@@ -13,7 +13,7 @@ contract('HelpMe', function(accounts) {
     }).timeout(100000);
 
     it("should revert", async() => {
-        let hash = contract.vmError();
+        let hash = contract.vmError(false, {from: addressA});
         let res = contract.vmError.call();
     })
 
