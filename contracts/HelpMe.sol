@@ -29,7 +29,8 @@ contract HelpMe {
 	}
 
 	function useAllGas() {
-		throw();
+		assert(false);
+		//throw();
 	}
 
 	function emitEvent() {
