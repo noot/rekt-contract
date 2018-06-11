@@ -36,4 +36,11 @@ contract HelpMe {
 	function emitEvent() {
 		emitMe(); // this will cause a warning with newer versions of solc
 	}
+
+	function unbalancedStack() {
+		uint x;
+		assembly {
+			x
+		}
+	}
 }
